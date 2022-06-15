@@ -1,30 +1,21 @@
-﻿//	Hacer tienda online de informatica usando: HTML, CSS, JS
+//	Hacer tienda online de informatica usando: HTML, CSS, JS
 //	En el codigo javascript hay que hacer la base de datos de los productos con un vector por ejemplo...
 
 
 
 
 //BASE DE DATOS
-var productos = ["Blusa Bordada", "Vestido Bordado y Tejido", "Blusa Estilizada Bordada", "Chamarra con bordado", "Blusa con Bordado y Tejido", "Blusa Bordada Estilizada Juvenil", "Blusa con Bordado y Tejido de Colores", "Blusa Bordada y Deshilada", "Blusa Bordada"];
-var imgGrandes = ["img/producto1.jpg", "img/producto2.jpg", "img/producto3.jpg", "img/producto6.jpg", "img/producto9.jpg", "img/producto4.jpg", "img/producto7.jpg", "img/producto8.jpg", "img/producto5.jpg"];
-var imgPeque = ["img/producto1.jpg", "img/producto2.jpg", "img/producto3.jpg", "img/producto6.jpg", "img/producto9.jpg", "img/producto4.jpg", "img/producto7.jpg", "img/producto8.jpg", "img/producto5.jpg"];
-var precios = [750, 2000, 490, 550, 2500, 490, 2500, 1500, 690];
-var stock = [5, 2, 8, 1, 4, 10, 3, 1, 3];
-var precioTransporte = [99, 12, 20, "gratis"];
-var IVA = 0.12;
-var uniUser;
-
-
-//BASE DE DATOS
-var productos2 = ["Blusa Bordada", "Vestido Bordado y Tejido", "Blusa Estilizada Bordada", "Chamarra con bordado", "Blusa con Bordado y Tejido", "Blusa Bordada Estilizada Juvenil", "Blusa con Bordado y Tejido de Colores", "Blusa Bordada y Deshilada", "Blusa Bordada"];
-var imgGrandes2 = ["img/producto3.jpg", "img/producto4.jpg", "img/producto7.jpg", "img/producto2.jpg", "img/producto9.jpg", "img/producto4.jpg", "img/producto7.jpg", "img/producto8.jpg", "img/producto5.jpg"];
-var imgPeque2 = ["img/producto1.jpg", "img/producto2.jpg", "img/producto3.jpg", "img/producto6.jpg", "img/producto9.jpg", "img/producto4.jpg", "img/producto7.jpg", "img/producto8.jpg", "img/producto5.jpg"];
-var precios2 = [750, 2000, 490, 550, 2500, 490, 2500, 1500, 690];
-var stock2 = [1, 1, 1, 1, 1, 1, 1, 1, 1];
+var productos = ["Blusa Bordada", "Blusa Bordada", "Blusa Bordada", "Blusa Bordada", "Blusa Bordada", "Blusa Bordada Estilizada Juvenil", "Blusa con Bordado y Tejido de Colores", "Blusa Bordada y Deshilada", "Blusa Bordada"];
+var imgGrandes = ["img/producto12.jpg", "img/producto17.jpg", "img/producto57.jpg", "img/producto64.jpg", "img/producto68.jpg", "img/producto70.jpg", "img/producto11.jpg", "img/producto38.jpg", "img/producto65.jpg"];
+var imgPeque = ["img/producto12.jpg", "img/producto17.jpg", "img/producto57.jpg", "img/producto64.jpg", "img/producto68.jpg", "img/producto70.jpg", "img/producto11.jpg", "img/producto38.jpg", "img/producto65.jpg"];
+var precios = [750, 750, 750, 750, 750, 750, 250, 250, 350];
 var talla =["Mediana", "Grande", "Mediana","Chica", "Chica", "Mediana", "Grande", "Grande", "Chica"];
+var stock = [1, 1, 1, 1, 1, 1, 1, 1, 1];
 var precioTransporte = [99, 12, 20, "gratis"];
 var IVA = 0.12;
 var uniUser;
+
+
 
 
 //JAVASCRIPT A EJECUTARSE UNA VEZ CARGADA LA PAGINA:	
@@ -34,12 +25,12 @@ window.onload = function(){
     //Se cargan los productos dentro del HTML de forna dinamica haciendo uso de los datos de la base de datos, como si de un PHP se tratase:
     var DIVS = document.getElementsByName("DIVS");
     for (i in productos){
-        DIVS[i].innerHTML = '<a id="imgG'+i+'" href="' +imgGrandes[i]+ '"><img id="imgP'+i+'" class="imagen" src="' +imgPeque[i]+ '"></a><div class="etiquetas"><b><span id="pro'+i+'">' +productos[i]+ '</span>: <span id="pre'+i+'">$' +precios[i]+ 'MXN</span></b></div><div class="stock">Unica Pieza Disponible<span id="uni'+i+'">' + '</span> <br/>Talla:' +talla[i]+ '<input class="uniBien" type="number" id="uniUser'+i+'" name="uniUser" value="0" size="4" /></div>';
+        DIVS[i].innerHTML = '<a id="imgG'+i+'" href="' +imgGrandes[i]+ '"><img id="imgP'+i+'" class="imagen" src="' +imgPeque[i]+ '"></a><div class="etiquetas"><b><span id="pro'+i+'">' +productos[i]+ '</span>: <span id="pre'+i+'">$' +precios[i]+ 'MXN</span></b></div><div class="stock">Unica pieza disponible <span id="uni'+i+'">' + '</span> <br/> Talla:' +talla[i]+ '<input class="uniBien" type="number" id="uniUser'+i+'" name="uniUser" value="0" size="4" /></div>';
     }
     window.onload = function(){ 
     var DIVS2 = document.getElementsByName("DIVS2");
     for (i in productos2){
-        DIVS2[i].innerHTML = '<a id="imgG'+i+'" href="' +imgGrandes2[i]+ '"><img id="imgP'+i+'" class="imagen" src="' +imgPeque2[i]+ '"></a><div class="etiquetas"><b><span id="pro'+i+'">' +productos2[i]+ '</span>: <span id="pre'+i+'">$' +precios2[i]+ 'MXN</span></b></div><div class="stock">Disponibles:<span id="uni'+i+'">' +stock2[i]+ '</span> unidades,<br/>¿Cuantas te gustarían?: <input class="uniBien" type="number" id="uniUser'+i+'" name="uniUser" value="0" size="4" /></div>';
+        DIVS2[i].innerHTML = '<a id="imgG'+i+'" href="' +imgGrandes2[i]+ '"><img id="imgP'+i+'" class="imagen" src="' +imgPeque2[i]+ '"></a><div class="etiquetas"><b><span id="pro'+i+'">' +productos2[i]+ '</span>: <span id="pre'+i+'">$' +precios2[i]+ 'MXN</span></b></div><div class="stock">Unica pieza:<span id="uni'+i+'">' +stock2[i]+ '</span> unidades,<br/>¿Cuantas te gustarían?: <input class="uniBien" type="number" id="uniUser'+i+'" name="uniUser" value="0" size="4" /></div>';
     }}
 
     //Rellena el campo dia y año, de la fecha de nacimiento y tarjeta de credito:

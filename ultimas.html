@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa Artesanal "Itandehui"</title>
+    <link rel="stylesheet" href="css\estilos.css">
+    <script src="javascript4.js"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="img/logo.jpg" class="logo">
+
+        </div>
+        <div class="envio">
+             <ul>
+              <h2>
+                 
+                 <img src="img/envio.png">ENVÍOS A TODO MÉXICO DESDE $99 
+              </h2>  
+            </ul>
+        </div>
+       
+        <div class="nav-medio">
+            <div class="search-box">
+                <img src="img/search.png">
+                <input type="text" placeholder="B U S C A R">
+            </div></div> 
+            </div>
+            
+        
+    </nav>
+    
+    <div class="container">
+
+        <!------------left-sidebar-------------  -->
+        <div class="left-slidebar">
+            <div class="imp-links">
+                <a href="Promociones.html">
+                    <img src="img/oferta.png"> PROMOCIONES  
+                         
+                </a>
+                    <a href="ultimas.html">
+                        <img src="img/ultimas.jpg"> ÚLTIMAS PIEZAS
+                    </a>
+                    <a href="nuevos.html">
+                        <img src="img/nuevo.png"> NUEVOS MODELOS
+                    </a>
+                    <a href="vendidos.html">
+                        <img src="img/vendidos.png"> MAS VENDIDOS
+                    </a>
+                    <a href="primavera.html">
+                        <img src="img/hoja.png"> COLECCION PRIMAVERA
+                    </a>
+                    <a href="tendencia.html">
+                        <img src="img/regalo.png"> TENDENCIA 2022
+                    </a>
+                    <a href="mujer.html">
+                        <img src="img/nuevos.png"> MUJER
+                    </a>
+                    
+                    <a href="nina.html">
+                        <img src="img/nuevos.png"> NIÑA
+                    </a>
+    
+
+                    <a href="https://www.facebook.com/ropa.artesanal.itandehui">
+                        <img src="img/flechavermas.png"> Ver más</a>
+     </div>
+    
+            
+        </div>
+
+        <!------------main content-------------  -->
+        <div class="main-content">
+            <div id="todo" class="todoNo">
+                <div class="fondo">
+                    <img src="img/ITANDEHUI (1).png" >
+              </div>      
+                <div id="menu" class="menuNo">
+                   <h1>Ú L T I M A S  &nbsp;&nbsp; P I E Z A S</h1><br>
+                    
+                    <!--Producto del 1 al 9-->
+                    <div id="div1" name="DIVS"></div>
+                    <div id="div2" name="DIVS"></div>
+                    <div id="div3" name="DIVS"></div>
+                    <div id="div4" name="DIVS"></div>
+                    <div id="div5" name="DIVS"></div>
+                    <div id="div6" name="DIVS"></div>
+                    <div id="div7" name="DIVS"></div>
+                    <div id="div8" name="DIVS"></div>
+                    <div id="div9" name="DIVS"></div>
+            
+                    
+                    <!--Botones de compra-->
+                    <div id="divbotones"><b>
+
+                    
+                        <input type="button" id="botonTotal" value="Calcular total"/>
+                        <input type="button" id="botonDatos" value="Datos personales" disabled="disabled"/>
+                        <input type="button" id="botonPago" value="Pago" disabled="disabled"/>
+                        <input type="button" id="botonConfirmar" value="Confirmar pedido" disabled="disabled"/>
+                     </div></b>
+    
+                    
+                    <!--zona de compra, tablas, formularios, etc.-->
+                    <div id="divZonaCompra" class="divZonaCompraNo">
+    
+                    
+                        <!--Carrito de la compra-->
+                        <div id="divTotal" class="divsNo">
+                            
+                            <p><b style="font-size:large; font-family:Georgia, 'Times New Roman', Times, serif; ">Carrito de la compra, si quiere hacer alguna modificacion aun esta a tiempo:</b></p><br>
+                            <table id="tablaTotal"></table>
+                        </div>
+                    
+                    
+                        <!--Datos personales-->				
+                        <div id="divDatos" class="divsNo">
+                            <p ><b>Introduzca sus datos personales:</b></p><br>
+    
+                                <div id="divDatosPersonales0">
+                                    <div id="divDatosPersonales1">
+                                        <label>Nombre completo:</label><br/>
+                                        <input type="text" id="nombre" value="" size="26" /><br/>
+    
+                                        
+                                        
+                                        <label>Fecha de nacimiento:</label><br/>
+                                        <select id="fechaNacimientoDia">
+                                            <option value=""> día </option>
+                                        </select>
+                                        <select id="fechaNacimientoMes">
+                                            <option value="">      mes</option>
+                                            <option value="1">Enero</option>
+                                            <option value="2">Febrero</option>
+                                            <option value="3">Marzo</option>
+                                            <option value="4">Abril</option>
+                                            <option value="5">Mayo</option>
+                                            <option value="6">Junio</option>
+                                            <option value="7">Julio</option>
+                                            <option value="8">Agosto</option>
+                                            <option value="9">Septiembre</option>
+                                            <option value="10">Octubre</option>
+                                            <option value="11">Noviembre</option>
+                                            <option value="12">Diciembre</option>
+                                        </select>			
+                                        <select id="fechaNacimientoAnio">
+                                            <option value="">  año </option>
+                                        </select><br/>
+                                    </div>
+                                    <div id="divDatosPersonales2">
+                                        <label>Telefono movil:</label><br/>
+                                        <input type="text" id="movil" value="" size="8" maxlength="10"/><br/>
+    
+                                        <label>Email:</label><br/>
+                                        <input type="text" id="email1" value="" size="25" /><br/>
+                                        
+                                        <label>Repita el email:</label><br/>
+                                        <input type="text" id="email2" value="" size="25" />							
+                                    </div>
+                                </div>
+                                <br>
+                                <p><b>Introduzca sus datos de domicilio:</b></p>
+                            <div id="divDomicilio"><br><br>
+                                <label>Selecciona el tipo de via:</label>
+                                <select id="tipoDeVia">
+                                    <option value="Avenida">Avenida</option>
+                                    <option value="Calle"selected="selected">Calle</option>
+                                    <option value="Camino">Camino</option>
+                                    <option value="Carretera">Carretera</option>
+                                    <option value="Pasaje">Pasaje</option>
+                                    <option value="Plaza">Plaza</option>
+                                    <option value="Residencia">Residencia</option>
+                                    <option value="Ronda">Ronda</option>
+                                    <option value="Travesia">Travesia</option>
+                                    <option value="Urbanizacion">Urbanizacion</option>
+                                </select>     
+                                
+                                <label>Nombre:</label>
+                                <input type="text" id="viaNombre" value="" size="20" /><br/>
+                                
+                                <label>Nº:</label>
+                                <input type="text" id="viaNumero" value="" size="2" />  
+                                    
+                                <label>Bloque:</label>
+                                <input type="text" id="viaBloque" value="" size="2" />         
+    
+                                <label>Escalera:</label>
+                                <input type="text" id="viaEscalera" value="" size="2" />  
+                                    
+                                <label>Piso:</label>
+                                <input type="text" id="viaPiso" value="" size="2" /><br/>
+                                
+                                
+                                <label>Localidad:</label>
+                                <input type="text" id="localidad" value="" size="13"/>  
+                                
+                                <label>Codigo Postal:</label>
+                                <input type="text" id="codigoPostal" value="" size="5" maxlength="5"/>  
+                                
+                                <label>Estado:</label>
+                                <select id="provincia">
+                                    <option value="">          provincia</option>
+                                    <option value="15">Ciudad de México</option>
+                                    <option value="1">Jalisco</option>
+                                    <option value="2">Nuevo León</option>
+                                    <option value="3">Aguascalientes</option>
+                                    <option value="4">Baja California</option>
+                                    <option value="33">Baja California Sur</option>
+                                    <option value="5">Campeche</option>
+                                    <option value="6">Chiapas</option>
+                                    <option value="7">Coahuila</option>
+                                    <option value="8">Colima</option>
+                                    <option value="9">Durango</option>
+                                    <option value="10">Guanajuato</option>
+                                    <option value="11">Guerrero</option>
+                                    <option value="39">Hidalgo</option>
+                                    <option value="12">Estado de México</option>
+                                    <option value="51">Michoacán</option>
+                                    <option value="13">Morelos</option>
+                                    <option value="14">Nayarit</option>
+                                    <option value="16">Oaxaca</option>
+                                    <option value="99">Puebla</option>
+                                    <option value="17">Querétaro</option>
+                                    <option value="18">Quintana Roo</option>
+                                    <option value="19">San Luis Potosí</option>
+                                    <option value="20">Sinaloa</option>
+                                    <option value="21">Sonora</option>
+                                    <option value="22">Tabasco</option>
+                                    <option value="23">Tamaulipas</option>
+                                    <option value="26">Tlaxcala</option>
+                                    <option value="35">Veracruz</option>
+                                    <option value="24">Yucatán</option>
+                                    <option value="25">Zacatecas</option>
+                                
+                                </select>
+                            </div>								
+                        </div>					
+                        
+                        
+                        <!--Datos de pago-->
+                        <div id="divPago" class="divsNo">
+                            <p><b>Introduzca los datos de la tarjeta de crédito o débito donde se realizará el cobro:</b></p>
+    
+                            
+                            <label>Titular de la tarjeta:</label><br/>
+                            <input type="text" id="titular" value="" size="26" /><br/>
+    
+                            
+                            <div id="metodosDePago">
+                                <label><span  id="alertTipoDeTarjeta">Tipo de tarjeta:</span></label><br/>
+                                <label for="visa">
+                                    <input type="radio" id="visa" name="tarjetas" class="logoTarjetas" value="Visa">
+                                    <img src="img/visa-logo.jpg"></img>
+                                </label>
+                                  
+                                <label for="masterCard">
+                                    <input type="radio" id="masterCard" name="tarjetas" class="logoTarjetas" value="MasterCard">
+                                    <img src="img/mastercard-logo.png"></img>
+                                </label>
+                                  
+                                <label for="amex">
+                                    <input type="radio" id="amex" name="tarjetas" class="logoTarjetas" value="American Express">
+                                    <img src="img/american-express-graphic-design-3.jpg"></img>
+                                </label>
+                                
+                        
+                            </div>
+                            
+                            
+                            <div id="divNumeroTarjeta">
+                                <label>Número tarjeta:</label><br/>
+                                <input type="text" id="numeroTarjeta" value="" size="15" maxlength="16" />
+                                <label>Número CVC:</label><br/>                                
+                                <input type="text" id="cvcTarjeta" value="" size="2" maxlength="3" /><br/>
+                                
+                                <label>Fecha de vencimiento:</label><br/>                                
+                                <select id="mesTarjeta">
+                                    <option value="">  mes </option>
+                                </select>
+    
+                                <select id="anioTarjeta">
+                                    <option value="">  año </option>
+                                </select>
+                            </div>
+                        </div>	
+                        <!--fin-->					
+                    </div>
+                </div>	
+            </div>
+           
+    
+        </div>  
+          
+
+    </div>
+
+
+</body><footer>
+    
+                    <img src="img/ITANDEHUI.png" >
+          </footer>
+</html>
